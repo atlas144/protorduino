@@ -1,0 +1,16 @@
+###########################################
+# Syntax Coloring Map For Stepper Motor library
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+
+Protorduino	KEYWORD1
+
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+
+registerTask KEYWORD2
+tryTask   KEYWORD2
