@@ -13,4 +13,4 @@ Protorduino	KEYWORD1
 ###########################################
 
 registerTask KEYWORD2
-tryTask   KEYWORD2
+execute   KEYWORD2
