@@ -30,8 +30,6 @@ void Protorduino::execute() {
                 
                 lastExecutionTimestamps[i] = currentTimestamp;
             }
-        
-            break;
         }
     }
 }
