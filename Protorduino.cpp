@@ -12,6 +12,8 @@ Protorduino::Protorduino(uint8_t numberOfTasks) : numberOfTasks(numberOfTasks) {
 }
 
 void Protorduino::registerTask(Task task, unsigned long tasksDuration, uint8_t order) {
+    order--;
+
     tasks[order] = task;
     tasksRegistrationStatus[order] = true;
     tasksDurations[order] = tasksDuration;
