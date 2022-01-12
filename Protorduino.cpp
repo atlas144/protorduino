@@ -20,7 +20,7 @@ void Protorduino::registerTask(Task task, unsigned long tasksDuration, uint8_t o
     lastExecutionTimestamps[order] = 0;
 }
 
-void Protorduino::execute() {
+void Protorduino::loop() {
     for (uint8_t i = 0; i < numberOfTasks; i++) {
         if (tasksRegistrationStatus[i] == true) {
             unsigned long currentTimestamp = millis();

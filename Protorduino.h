@@ -16,7 +16,7 @@ class Protorduino {
   public:
     Protorduino(uint8_t maxNumberOfTasks);
     void registerTask(Task task, unsigned long tasksDuration, uint8_t order);
-    void execute();
+    void loop();
 };
 
 #endif
