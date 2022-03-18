@@ -3,15 +3,15 @@
 Protorduino::Protorduino(uint8_t numberOfTasks) : numberOfTasks(numberOfTasks) {
     tasks = new Task[numberOfTasks];
     tasksRegistrationStatus = new bool[numberOfTasks];
-    tasksDurations = new unsigned long[numberOfTasks];
-    lastExecutionTimestamps = new unsigned long[numberOfTasks];
+    tasksDurations = new uint32_t[numberOfTasks];
+    lastExecutionTimestamps = new uint32_t[numberOfTasks];
 
     for (uint8_t i = 0; i < numberOfTasks; i++) {
         tasksRegistrationStatus[i] = false;
     }
 }
 
-void Protorduino::registerTask(Task task, unsigned long tasksDuration, uint8_t order) {
+void Protorduino::registerTask(Task task, uint32_t tasksDuration, uint8_t order) {
     order--;
 
     tasks[order] = task;

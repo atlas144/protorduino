@@ -10,12 +10,12 @@ class Protorduino {
     uint8_t numberOfTasks;
     Task* tasks;
     bool* tasksRegistrationStatus;
-    unsigned long* tasksDurations;
-    unsigned long* lastExecutionTimestamps;
+    uint32_t* tasksDurations;
+    uint32_t* lastExecutionTimestamps;
 
   public:
     Protorduino(uint8_t maxNumberOfTasks);
-    void registerTask(Task task, unsigned long tasksDuration, uint8_t order);
+    void registerTask(Task task, uint32_t tasksDuration, uint8_t order);
     void loop();
 };
 
